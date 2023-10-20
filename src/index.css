@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.background-image {
+  background-image: url("./background.png");
+  background-color: #1e213a;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: 55% 10%;
+  object-fit: contain;
+}
+
+.child {
+  background-repeat: no-repeat;
+  background-color: #1e213a;
+  opacity: 0.9;
+}
+
+.color {
+  background-color: #1e213a;
+}
+
+.custom-color2 {
+  background-color: #180c1c;
+}
+
+progress {
+  text-align: center;
+  height: 0.5em;
+  width: 80%;
+  -webkit-appearance: none;
+  border: none;
+}
+
+progress:before {
+  content: attr(data-label);
+
+  font-size: 0.8em;
+
+  vertical-align: 0;
+}
+
+progress:after {
+  content: attr(data);
+
+  font-size: 0.8em;
+  vertical-align: 0;
+}
+
+progress::-webkit-progress-value {
+  background-color: #ffec65;
+  /* Color of the progress bar itself */
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+
+  /* height: 10px; /* Height of the progress bar
+
+  width: 100px; */
+
+  border-radius: 10px;
+}
